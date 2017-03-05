@@ -1,0 +1,63 @@
+{
+  "name": "ngimport-demo",
+  "version": "1.0.0",
+  "description": "Demo app and tests for ngimport",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -r dist; exit 0",
+    "pretest": "npm run build",
+    "prepublish": "npm test",
+    "serve": "static .",
+    "test": "karma start --single-run",
+    "tdd": "karma start",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bcherny/ngimport-demo.git"
+  },
+  "keywords": [
+    "ngimport",
+    "demo",
+    "example",
+    "angular",
+    "di",
+    "dependency",
+    "inject",
+    "dependency",
+    "injection",
+    "import",
+    "require"
+  ],
+  "author": "Boris Cherny <boris@performancejs.com> (https://performancejs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcherny/ngimport-demo/issues"
+  },
+  "homepage": "https://github.com/bcherny/ngimport-demo#readme",
+  "dependencies": {
+    "@types/angular": "^1.6.7",
+    "angular": "^1.6.2",
+    "ngimport": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/angular-mocks": "^1.5.9",
+    "@types/jasmine": "^2.5.43",
+    "angular-mocks": "^1.6.2",
+    "browserify": "^14.1.0",
+    "jasmine": "^2.5.3",
+    "karma": "^1.5.0",
+    "karma-browserify": "^5.1.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.2",
+    "karma-source-map-support": "^1.2.0",
+    "node-static": "^0.7.9",
+    "npm-run-all": "^4.0.2",
+    "tsify": "^3.0.1",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1",
+    "watchify": "^3.9.0"
+  }
+}
